@@ -1,0 +1,43 @@
+.Navigationitem {
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+}
+
+.Navigationitem a {
+  color: brown;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+}
+
+.Navigationitem a:hover,
+.Navigationitem a:active {
+  color: rgb(91, 91, 207);
+}
+
+@media (min-width: 500px) {
+  .Navigationitem {
+    margin: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .Navigationitem a {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 16px 20px;
+    border-bottom: 4px solid transparent;
+  }
+
+  .Navigationitem a:hover {
+    border-bottom: rgba(138, 90, 0, 0.445);
+    color: blue;
+  }
+  .Navigationitem a:active {
+    border-bottom: rgba(21, 0, 138, 0.445);
+    color: rgb(91, 91, 207);
+  }
+}
